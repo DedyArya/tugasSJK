@@ -79,7 +79,7 @@ form .field {
   color: #2691d9;
 }
 
-input[type="submit"] {
+button[type="submit"] {
   width: 100%;
   height: 50px;
   border: 1px solid #2691d9;
@@ -92,7 +92,7 @@ input[type="submit"] {
   outline: none;
 }
 
-input[type="submit"]:hover {
+button[type="submit"]:hover {
   background: #fff;
   color: #2691d9;
   transition: 0.25s;
@@ -125,4 +125,39 @@ input[type="submit"]:hover {
   font-size: 15px;
   color: #00426e;
   background-color: rgba(255, 255, 255, 0.5);
+}
+
+h1 {
+  font-size: 100px;
+  justify-content: center;
+  align-items: center;
+  margin-left: 25%;
+}
+
+.back {
+  justify-content: center;
+  margin-left: 45%;
+  align-items: center;
+  padding: 10px 10px;
+  width: 5%;
+  border-radius: 15px;
+  background: #fff;
+  border: 1px solid #fff;
+}
+
+.back a {
+  margin-left: 3px;
+  text-decoration: none;
+  font-weight: 700;
+  color: #00426e;
+}
+
+.back:hover {
+  color: #fff;
+  background: rgb(65, 65, 65);
+  transition: 0.25s;
+}
+
+.back a:hover {
+  color: #fff;
 }

@@ -1,10 +1,18 @@
+<?php
+
+require 'function.php';
+
+?>
+
+
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Halaman Login</title>
-    <link rel="stylesheet" href="login.css" />
+    <title>Halaman Register</title>
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <div class="anggota">
@@ -17,20 +25,20 @@
       <h3>6. Satria Dimar Putra (1462200178)</h3>
     </div>
     <div class="container">
-      <h2>LOGIN</h2>
-      <form method="loginform">
+      <h2>REGISTER</h2>
+      <form method="post">
         <div class="field">
-          <input type="text" required />
+          <input type="text" name="username" id="username" required />
           <span></span>
           <label>Username</label>
         </div>
         <div class="field">
-          <input type="password" required />
+          <input type="password" name="password" id="password" required />
           <span></span>
           <label>Password</label>
         </div>
-        <input type="submit" value="Login" />
-        <div class="account">Tidak Punya Akun? <a href="http://">Buat Akun</a></div>
+        <button type="submit" name="register"id="register">Register</button>
+        <div class="account">Sudah Punya Akun? <a href="login.php">Login</a></div>
       </form>
     </div>
   </body>
